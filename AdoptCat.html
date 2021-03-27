@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Adopt Cat</title>
+    <link href="AdobtCatStyleSheet1.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div>
+                <div class="header-left">
+                    <ul>
+                        <li><a href="Home.html"><b>Home</b></a></li>
+                        <li><a href="AdoptCat.html" class="active"><b>Adopt Cat</b></a></li>
+                        <li><a href="AboutUs.html"><b>About Us</b></a></li>
+                        <li><a href="ContactUs.html"><b>Contact Us</b></a></li>
+                    </ul>
+                </div>
+                <img src="Properties/Logo.png" alt="Logo Image" style="padding: 16px 25px; width: 156px; height: 155px; margin-left: 89%; margin-top: -11%;" />
+            </div>
+        </nav>
+    </header>
+
+   <!-- Main -->
+    <main>
+        <h5>Don't buy a cat, Adobt one!</h5>
+        <div class="form">
+            <div class="position">
+                <form>
+                    <label for="tname"><b>Enter Cat Name:</b></label>
+                    <input type="text" name="tname" id="tname" value="" class="text" /><br />
+                    <label for="tbreed"><b>Enter Cat Breed:</b></label>
+                    <input type="text" name="tbreed" id="tbreed" value="" class="text" /><br />
+                    <label for="tage"><b>Enter Cat Age:</b></label>
+                    <input type="number" name="tage" id="tage" value="" class="text" /><br />
+                    <label for="tcolor"><b>Enter Cat Color:</b></label>
+                    <input type="text" name="tcolor" id="tcolor" value="" class="text" /><br />
+
+                    <input type="button" name="add" id="add" value="Submit" onclick="FormToTable()" class="submit" />
+                </form>
+            </div>
+        </div>
+
+        <div class="table">
+            <table id="DisplayForm">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Breed</th>
+                        <th>Age</th>
+                        <th>Color</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <script src="AdobtCatJavaScript.js"></script>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+</body>                 
+</html>
